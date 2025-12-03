@@ -1,0 +1,148 @@
+  body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #006d6f;
+      color: white;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 50px;
+      background: #004b4c;
+      position: sticky;
+      top: 0;
+    }
+
+    header h2 {
+      margin: 0;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #00d9d9;
+    }
+
+    section {
+      display: none;
+      padding: 50px;
+      min-height: 100vh;
+    }
+
+    section:target {
+      display: block;
+    }
+
+    #about {
+      display: block;
+    }
+
+    
+   .about-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;  
+  padding: 30px;
+  padding-top: 25%;
+}
+
+.about-text {
+  flex: 1;            
+}
+
+.about-container img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid white;
+}
+
+
+    .skills-container, .form-container {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 30px;
+      padding-top: 25%;
+    }
+
+    .card {
+      background: #017374;
+      padding: 20px;
+      border-radius: 12px;
+      width: 300px;
+      text-align: center;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    }
+
+    .card img {
+      max-width: 100%;
+      border-radius: 8px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #00aaff;
+      color: white;
+      padding: 10px 20px;
+      margin-top: 10px;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+
+    .btn:hover {
+      background: #0088cc;
+    }
+
+    .form-box {
+      background: #017374;
+      padding: 20px;
+      border-radius: 12px;
+      width: 300px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    }
+
+    .form-box input {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 6px;
+    }
+
+    .form-box button {
+      width: 100%;
+      padding: 10px;
+      background: #00aaff;
+      border: none;
+      border-radius: 6px;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .form-box button:hover {
+      background: #0088cc;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #004b4c;
+    }
+
+    footer img {
+      width: 30px;
+      margin: 0 5px;
+    }

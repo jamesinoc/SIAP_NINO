@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <header>
+    <h2>MY PORTFOLIO</h2>
+    <nav>
+      <a href="#about">about</a>
+      <a href="#project">project</a>
+      <a href="#contact">contact</a>
+    </nav>
+  </header>
+
+<section id="about">
+  <h2>ABOUT ME</h2>
+  <div class="about-container">
+    <div class="about-text">
+      <p>Hello, it’s me</p>
+      <h3>Nino Pritz L. Densing</h3>
+      <p>
+        <h4 class="nino">This site shows my Projects, Skills, and Learned journey. <br>
+        I am an excellent team worker and am able to take instructions 
+        from all levels and build good working relationships with all colleagues.
+        I am an enthusiastic, self-motivated, reliable, responsible, 
+        and hardworking person.</h4>
+      </p>
+    </div>
+    <img src="hi.jpg" alt="Profile Photo">
+  </div>
+</section>
+
+  <section id="project">
+    <h2>SKILLS</h2>
+    <div class="skills-container">
+      <div class="card">
+        <!-- Default image for Skill 1. You can change this file name if needed. -->
+        <img src="1.jpg" alt="Problem Solving">
+        <!-- Hidden file input for Skill 1 image upload (layout is unchanged because this is hidden). -->
+        <input type="file" accept="image/*" class="skill-image-input" style="display: none;">
+        <p>I am focusing on problem-solving skills, tackling issues efficiently and effectively.</p>
+        <!-- "SEE MORE" button for Skill 1.
+             You can change the destination URL inside script.js in the skillLinks array. -->
+        <a href="#project" class="btn">SEE MORE</a>
+      </div>
+      <div class="card">
+        <!-- Default image for Skill 2. You can change this file name if needed. -->
+        <img src="2.jpg" alt="Customer Service">
+        <!-- Hidden file input for Skill 2 image upload. -->
+        <input type="file" accept="image/*" class="skill-image-input" style="display: none;">
+        <p>I prioritize customer service skills to build strong client relationships.</p>
+        <!-- "SEE MORE" button for Skill 2.
+             You can change the destination URL inside script.js in the skillLinks array. -->
+        <a href="#project" class="btn">SEE MORE</a>
+      </div>
+      <div class="card">
+        <!-- Default image for Skill 3. You can change this file name if needed. -->
+        <img src="3.jpg" alt="Financial Literacy">
+        <!-- Hidden file input for Skill 3 image upload. -->
+        <input type="file" accept="image/*" class="skill-image-input" style="display: none;">
+        <p>I am developing my financial literacy skills to manage resources responsibly.</p>
+        <!-- "SEE MORE" button for Skill 3.
+             You can change the destination URL inside script.js in the skillLinks array. -->
+        <a href="#project" class="btn">SEE MORE</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>CONTACT</h2>
+    <div class="form-container">
+      <div class="form-box">
+        <input type="text" placeholder="Username">
+        <input type="password" placeholder="Password">
+        <button>SIGN IN</button>
+      </div>
+      <div class="form-box">
+        <input type="text" placeholder="Firstname">
+        <input type="text" placeholder="Middlename">
+        <input type="text" placeholder="Lastname">
+        <input type="email" placeholder="Email">
+        <button>SIGN UP</button>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>Follow me on</p>
+    <a href="https://facebook.com" target="_blank">
+      <img src="https://img.icons8.com/color/48/facebook-new.png" alt="Facebook">
+    </a>
+    <a href="https://instagram.com" target="_blank">
+      <img src="https://img.icons8.com/color/48/instagram-new.png" alt="Instagram">
+    </a>
+  </footer>
+
+  <!-- Main JavaScript file.
+       - Makes each skill image clickable to upload a new image.
+       - Saves the chosen image in localStorage so it persists after reload.
+       - Makes each "SEE MORE" button redirect to URLs you can edit in script.js. -->
+  <script src="script.js"></script>
+
+</body>
+</html>
